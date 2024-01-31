@@ -1,9 +1,9 @@
-.. Machine-Vision platform documentation master file, created by
+.. MIDI to DMX platform documentation master file, created by
    sphinx-quickstart on Sat Jan 13.
    You can adapt this file completely to your liking, but it should at least contain the root `toctree` directive.
 
 Documentation of MIDI to DMX platform
-========================================
+=====================================
 
 .. caution::
    This documentation website is still in development
@@ -18,7 +18,9 @@ The GitHub repository of this project : `Light Midi2DMX <https://github.com/IOGS
    :maxdepth: 1
    :caption: MIDI and DMX
    
-	Machine Vision platform<contents/midi_and_dmx>
+	MIDI and DMX applications<contents/midi_and_dmx>
+	DMX protocol<contents/protocol_dmx>
+	MIDI protocol<contents/protocol_midi>
 
 .. toctree::
    :maxdepth: 1

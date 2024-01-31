@@ -39,8 +39,8 @@ Channels
 Main MIDI messages
 ~~~~~~~~~~~~~~~~~~
 
-Notes
-=====
+Playing or stopping a note
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To play a note, a first type of message, called NOTE_ON, is used.
 
@@ -71,11 +71,10 @@ where C is the channel (coded on 4 bits), P is the note value (coded on 7 bits) 
 
 
 After Touch
-===========
-
+~~~~~~~~~~~
 
 Control changes
-===============
+~~~~~~~~~~~~~~~
 
 
 
@@ -83,7 +82,7 @@ There are standard values for controlling instruments. For example, the number 7
 
 
 Program changes and internal messages
-=====================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 To resume

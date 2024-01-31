@@ -50,7 +50,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="midi_and_dmx.html">     MIDI and DMX applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="protocol_dmx.html">     DMX protocol</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MIDI protocol</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">     MIDI protocol</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#midi-applications">MIDI applications</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#instruments-and-sequencers">Instruments and sequencers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#typical-midi-setup">Typical MIDI setup</a></li>
@@ -64,14 +64,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#application-layer-of-the-protocol">Application layer of the protocol</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#channels">Channels</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#main-midi-messages">Main MIDI messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#playing-or-stopping-a-note">Playing or stopping a note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#after-touch">After Touch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#control-changes">Control changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#program-changes-and-internal-messages">Program changes and internal messages</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#notes">Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#after-touch">After Touch</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#control-changes">Control changes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#program-changes-and-internal-messages">Program changes and internal messages</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#to-resume">To resume</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#note-on-and-note-off">NOTE_ON and NOTE_OFF</a></li>
 </ul>
@@ -148,10 +146,8 @@
 <section id="main-midi-messages">
 <h3>Main MIDI messages<a class="headerlink" href="#main-midi-messages" title="Link to this heading"></a></h3>
 </section>
-</section>
-</section>
-<section id="notes">
-<h1>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h1>
+<section id="playing-or-stopping-a-note">
+<h3>Playing or stopping a note<a class="headerlink" href="#playing-or-stopping-a-note" title="Link to this heading"></a></h3>
 <p>To play a note, a first type of message, called NOTE_ON, is used.</p>
 <p>This message is composed of 3 bytes :</p>
 <ul class="simple">
@@ -177,14 +173,16 @@
 </figure>
 </section>
 <section id="after-touch">
-<h1>After Touch<a class="headerlink" href="#after-touch" title="Link to this heading"></a></h1>
+<h3>After Touch<a class="headerlink" href="#after-touch" title="Link to this heading"></a></h3>
 </section>
 <section id="control-changes">
-<h1>Control changes<a class="headerlink" href="#control-changes" title="Link to this heading"></a></h1>
+<h3>Control changes<a class="headerlink" href="#control-changes" title="Link to this heading"></a></h3>
 <p>There are standard values for controlling instruments. For example, the number 7 is often used to control the main volume of the instruments, the number 8 for the balance…</p>
 </section>
 <section id="program-changes-and-internal-messages">
-<h1>Program changes and internal messages<a class="headerlink" href="#program-changes-and-internal-messages" title="Link to this heading"></a></h1>
+<h3>Program changes and internal messages<a class="headerlink" href="#program-changes-and-internal-messages" title="Link to this heading"></a></h3>
+</section>
+</section>
 <section id="to-resume">
 <h2>To resume<a class="headerlink" href="#to-resume" title="Link to this heading"></a></h2>
 <p>MIDI communications are based on the <strong>RS232</strong> (or Serial) protocol fot the low-level layer data transmission. The baudrate is <strong>31250 bauds</strong>.</p>

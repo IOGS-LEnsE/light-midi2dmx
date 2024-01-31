@@ -152,7 +152,8 @@
 </section>
 <section id="notes">
 <h1>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h1>
-<p>NOTE_ON and NOTE_OFF</p>
+<p>To play a note, a first type of message, called NOTE_ON, is used.</p>
+<p>This message is composed of 3 bytes :</p>
 <ul class="simple">
 <li><p>Status byte : 1001 CCCC</p></li>
 <li><p>Data byte 1 : 0PPP PPPP</p></li>
@@ -160,9 +161,20 @@
 </ul>
 <p>where C is the channel (coded on 4 bits), P is the note value (coded on 7 bits) and V is the velocity (coded on 7 bits).</p>
 <figure class="align-default">
-<img alt="_static/midi/note_on.png" src="_static/midi/note_on.png" />
+<img alt="../_images/note_on.png" src="../_images/note_on.png" />
 </figure>
 <p>To play the C3 note (value 60), at a velocity of 52, from the channel 3, the MIDI message is the folowing : (1001 0011) (0011 1100) (0011 0100)</p>
+<p>To stop playing a note, a second type of message, called NOTE_OFF, is used.</p>
+<p>This message is composed of 3 bytes :</p>
+<ul class="simple">
+<li><p>Status byte : 1000 CCCC</p></li>
+<li><p>Data byte 1 : 0PPP PPPP</p></li>
+<li><p>Data byte 2 : 0VVV VVVV</p></li>
+</ul>
+<p>where C is the channel (coded on 4 bits), P is the note value (coded on 7 bits) and V is the velocity. In this case, the velocity is often set to 0.</p>
+<figure class="align-default">
+<img alt="../_images/note_off.png" src="../_images/note_off.png" />
+</figure>
 </section>
 <section id="after-touch">
 <h1>After Touch<a class="headerlink" href="#after-touch" title="Link to this heading"></a></h1>

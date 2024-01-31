@@ -42,8 +42,9 @@ Main MIDI messages
 Notes
 =====
 
-NOTE_ON and NOTE_OFF
+To play a note, a first type of message, called NOTE_ON, is used.
 
+This message is composed of 3 bytes : 
 
 * Status byte : 1001 CCCC
 * Data byte 1 : 0PPP PPPP
@@ -55,6 +56,18 @@ where C is the channel (coded on 4 bits), P is the note value (coded on 7 bits) 
 
 To play the C3 note (value 60), at a velocity of 52, from the channel 3, the MIDI message is the folowing : (1001 0011) (0011 1100) (0011 0100) 
 
+
+To stop playing a note, a second type of message, called NOTE_OFF, is used.
+
+This message is composed of 3 bytes : 
+
+* Status byte : 1000 CCCC
+* Data byte 1 : 0PPP PPPP
+* Data byte 2 : 0VVV VVVV
+
+where C is the channel (coded on 4 bits), P is the note value (coded on 7 bits) and V is the velocity. In this case, the velocity is often set to 0.
+
+.. figure:: ../_static/midi/note_off.png
 
 
 After Touch

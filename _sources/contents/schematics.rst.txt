@@ -13,7 +13,11 @@ DMX extension - revision 3
 .. note::
    The DMX extension is a motherboard for the STM Nucleo board. It uses the Morpho connectors.
    
-.. figure:: ../_static/board/DMX_rev3_schematic.pdf
+.. figure:: ../_static/board/DMX_rev3_schematic_nucleo.png
+
+.. figure:: ../_static/board/DMX_rev3_schematic_dmx_signal.png
+
+.. figure:: ../_static/board/DMX_rev3_schematic_power_connect.png
 
 
 MIDI extension

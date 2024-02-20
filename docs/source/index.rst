@@ -36,7 +36,6 @@ The GitHub repository of this project : `Light Midi2DMX <https://github.com/IOGS
 	Overview<contents/material_overview>
 	L476RG version<contents/material_board_l476>
 	F767ZI version<contents/material_board_f767>
-	Testing procedures<contents/material_testing>
 
 .. toctree::
    :maxdepth: 1

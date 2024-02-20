@@ -43,6 +43,10 @@ MIDI extension
 .. note::
    The MIDI extension uses the Arduino connectors of the Nucleo board.
 
+.. figure:: ../_static/board/MIDI_schematic_nucleo.png
+
+.. figure:: ../_static/board/MIDI_schematic_in_out.png
+
 
 
 F767ZI version

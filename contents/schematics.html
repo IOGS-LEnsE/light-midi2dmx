@@ -70,7 +70,6 @@
 <li class="toctree-l1"><a class="reference internal" href="material_overview.html">     Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_board_l476.html">     L476RG version</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_board_f767.html">     F767ZI version</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material_testing.html">     Testing procedures</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Contributors</span></p>
 <ul>
@@ -116,12 +115,22 @@
 <p class="admonition-title">Note</p>
 <p>The DMX extension is a motherboard for the STM Nucleo board. It uses the Morpho connectors.</p>
 </div>
+<p>The Nucleo morpho connectors schematic :</p>
 <figure class="align-default">
 <img alt="../_images/DMX_rev3_schematic_nucleo.png" src="../_images/DMX_rev3_schematic_nucleo.png" />
 </figure>
+<p>The output DMX signal is generated as mentionned in the next figure, to respect the timing of the protocol.</p>
+<figure class="align-default">
+<img alt="../_images/DMX_trame.png" src="../_images/DMX_trame.png" />
+</figure>
+<p>Four signals are used to generate the perfect timing : <em>start</em>, <em>out_s</em>, <em>enable</em> and <em>TX</em> (serial output used for transmitting data).</p>
+<p>A MAX485 low-power transceiver is used for RS-485 communication on the DMX bus.</p>
 <figure class="align-default">
 <img alt="../_images/DMX_rev3_schematic_dmx_signal.png" src="../_images/DMX_rev3_schematic_dmx_signal.png" />
 </figure>
+<p>Three potentiometers (<em>RV1</em>, <em>RV2</em> and <em>RV3</em>) can be used on the board and are connected to three analog inputs.</p>
+<p>Two analog inputs can also be used (<em>PitchIn</em> - J1 - and <em>VolumeIn</em> - J7). The <em>VolumeIn</em> input is a filtered (15Hz high-pass first order filter) input with an offset compatible with Nucleo analog-to-digital converter.</p>
+<p>An <strong>external power supply</strong> between 7 to 12V can be used on the <strong>J6</strong> connector.</p>
 <figure class="align-default">
 <img alt="../_images/DMX_rev3_schematic_power_connect.png" src="../_images/DMX_rev3_schematic_power_connect.png" />
 </figure>

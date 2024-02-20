@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview of the platforms &mdash; MIDI to DMX Platform - LEnsE / IOGS 0.1 documentation</title>
+  <title>Schematics - MIDI 2 DMX Platform &mdash; MIDI to DMX Platform - LEnsE / IOGS 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/css/lense.css?v=129b6d81" />
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="MIDI to DMX Electronic Control board - version L476RG" href="material_board_l476.html" />
-    <link rel="prev" title="Machine Vision Testing procedures" href="material_testing.html" /> 
+    <link rel="next" title="Pinouts of the electronic board - MIDI 2 DMX Platform" href="pinouts.html" />
+    <link rel="prev" title="MIDI protocol" href="protocol_midi.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,14 +52,22 @@
 <li class="toctree-l1"><a class="reference internal" href="protocol_midi.html">     MIDI protocol</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Fast Access</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="schematics.html">     Schematics</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">     Schematics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#l476rg-version">L476RG version</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dmx-extension-revision-3">DMX extension - revision 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#midi-extension">MIDI extension</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#f767zi-version">F767ZI version</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pinouts.html">     Pinouts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_testing.html">     Testing procedures</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Materials</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">     Overview</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="material_overview.html">     Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_board_l476.html">     L476RG version</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_board_f767.html">     F767ZI version</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_testing.html">     Testing procedures</a></li>
@@ -84,9 +92,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Overview of the platforms</li>
+      <li class="breadcrumb-item active">Schematics - MIDI 2 DMX Platform</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/contents/material_overview.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/contents/schematics.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -94,17 +102,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="overview-of-the-platforms">
-<h1>Overview of the platforms<a class="headerlink" href="#overview-of-the-platforms" title="Link to this heading"></a></h1>
-<p>Two version</p>
+  <section id="schematics-midi-2-dmx-platform">
+<h1>Schematics - MIDI 2 DMX Platform<a class="headerlink" href="#schematics-midi-2-dmx-platform" title="Link to this heading"></a></h1>
+<section id="l476rg-version">
+<h2>L476RG version<a class="headerlink" href="#l476rg-version" title="Link to this heading"></a></h2>
+<section id="dmx-extension-revision-3">
+<h3>DMX extension - revision 3<a class="headerlink" href="#dmx-extension-revision-3" title="Link to this heading"></a></h3>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>On this version, the nRF24 connector can not be used. You need the MIDI extension.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The DMX extension is a motherboard for the STM Nucleo board. It uses the Morpho connectors.</p>
+</div>
+<figure class="align-default">
+<img alt="../_images/DMX_rev3_schematic.pdf" src="../_images/DMX_rev3_schematic.pdf" />
+</figure>
+</section>
+<section id="midi-extension">
+<h3>MIDI extension<a class="headerlink" href="#midi-extension" title="Link to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The MIDI extension uses the Arduino connectors of the Nucleo board.</p>
+</div>
+</section>
+</section>
+<section id="f767zi-version">
+<h2>F767ZI version<a class="headerlink" href="#f767zi-version" title="Link to this heading"></a></h2>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="material_testing.html" class="btn btn-neutral float-left" title="Machine Vision Testing procedures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="material_board_l476.html" class="btn btn-neutral float-right" title="MIDI to DMX Electronic Control board - version L476RG" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="protocol_midi.html" class="btn btn-neutral float-left" title="MIDI protocol" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pinouts.html" class="btn btn-neutral float-right" title="Pinouts of the electronic board - MIDI 2 DMX Platform" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

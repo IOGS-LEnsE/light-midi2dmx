@@ -18,9 +18,16 @@ The GitHub repository of this project : `Light Midi2DMX <https://github.com/IOGS
    :maxdepth: 1
    :caption: MIDI and DMX
    
-	MIDI and DMX applications<contents/midi_and_dmx>
 	DMX protocol<contents/protocol_dmx>
 	MIDI protocol<contents/protocol_midi>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Fast Access
+   
+	Schematics<contents/schematics>
+	Pinouts<contents/pinouts>
+	Testing procedures<contents/material_testing>
 
 .. toctree::
    :maxdepth: 1
@@ -29,7 +36,7 @@ The GitHub repository of this project : `Light Midi2DMX <https://github.com/IOGS
 	Overview<contents/material_overview>
 	L476RG version<contents/material_board_l476>
 	F767ZI version<contents/material_board_f767>
-	Testing procedure<contents/material_testing>
+	Testing procedures<contents/material_testing>
 
 .. toctree::
    :maxdepth: 1
